@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cryptonite</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container" class="row" >
+    <div id="headLine" class="badge badge-warning">Cryptonite </div> <br>
+    <div id="searchDiv">
+      <input id="searchInput" type="search" onclick=""> </input>
+      <button id="searchBtn" type="submit" class="btn btn-warning" onclick="search()"> Search </button>
+    </div>
+    <div id="navigtionDiv" class="btn-group" role="toolbar" aria-label="Basic example">
+      <button id="homeBtn" type="button" class="btn btn-warning" onclick="comingHome()"> Home </button>
+      <button id="liveReportBtn" type="button" class="btn btn-warning" onclick="graphRequest()">Live Reports </button>
+      <button id="aboutBtn" type="button" class="btn btn-warning" onclick="about()"> About </button>
+    </div>
+    <div id="dynamicDiv">
+     
+    </div>
+  </div>
+  <!-- 
+  Button trigger modal
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+  <!-- Modal -->
+  <div class="modal fade" data-backdrop="static" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" id="modalBackground">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sorry , you can choose only 5 coins<br> please click one coin (minimum) you want to remove </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+          <br>
+        </div>
+        <div class="modal-footer">
+          <button id="closeBtnModal" type="button" class="btn btn-dark" data-dismiss="modal" onclick="cancel()">Close</button>
+          <button id="saveBtnModal"  type="button" class="btn btn-dark" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
